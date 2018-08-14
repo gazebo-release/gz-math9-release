@@ -1,19 +1,20 @@
-Source: ignition-math5
+Source: ignition-math6
 Standards-Version: 3.9.4
 Maintainer: Jose Luis Rivero <jrivero@osrfoundation.org>
 Section: science
 Priority: extra
 Build-Depends: cmake,
-               debhelper (>= 7.0.50~),
+               debhelper (>= 11),
                doxygen,
-               libignition-cmake1-dev,
+               libignition-cmake2-dev,
                python,
-               ruby-ronn
+               ruby-ronn,
+               swig
 Vcs-Browser: https://bitbucket.org/ignitionrobotics/ign_math-release
 Vcs-Hg: https://bitbucket.org/ignitionrobotics/ign_math-release
 Homepage: https://bitbucket.org/ignitionrobotics/ign_math
 
-Package: libignition-math5
+Package: libignition-math6
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -21,21 +22,21 @@ Depends: ${shlibs:Depends}, ${misc:Depends}
 Multi-Arch: same
 Description: Ignition Robotics Math Library - Shared library
 
-Package: libignition-math5-dev
+Package: libignition-math6-dev
 Architecture: any
 Section: libdevel
-Depends: libignition-math5 (= ${binary:Version}),
+Depends: libignition-math6 (= ${binary:Version}),
          libignition-cmake1-dev,
          ${misc:Depends}
 Multi-Arch: same
 Description: Ignition Robotics Math Library - Development files
 
-Package: libignition-math5-dbg
+Package: libignition-math6-dbg
 Architecture: any
 Section: debug
 Priority: extra
 Depends:
-     libignition-math5 (= ${binary:Version}),
+     libignition-math6 (= ${binary:Version}),
      ${misc:Depends}
 Multi-Arch: same
 Description: Ignition Robotics Math Library - Debugging symbols

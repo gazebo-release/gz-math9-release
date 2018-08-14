@@ -1,5 +1,5 @@
 usr/include/*
 usr/lib/*/*.so
 usr/lib/*/pkgconfig/*.pc
-usr/lib/*/cmake/ignition-math5/*
+usr/lib/*/cmake/ignition-math6/*
 usr/share/ignition/*/*
