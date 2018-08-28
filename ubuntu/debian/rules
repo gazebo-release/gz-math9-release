@@ -3,6 +3,7 @@
 DEB_HOST_ARCH := $(shell dpkg-architecture -qDEB_HOST_ARCH)
 
 .PHONY: override_dh_auto_configure \
+        override_dh_strip \
         override_dh_auto_test
 
 %:
@@ -11,6 +12,9 @@ DEB_HOST_ARCH := $(shell dpkg-architecture -qDEB_HOST_ARCH)
 override_dh_auto_configure:
 	dh_auto_configure -- \
 	    -DCMAKE_BUILD_TYPE=RelWithDebInfo
+
+override_dh_strip:
+	dh_strip -a --dbg-package=libignition-math6-dbg
 
 override_dh_auto_test:
 ifeq ($(DEB_HOST_ARCH),armhf)
