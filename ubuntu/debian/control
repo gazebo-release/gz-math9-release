@@ -6,6 +6,7 @@ Priority: extra
 Build-Depends: cmake,
                debhelper (>= 11),
                doxygen,
+               libeigen3-dev,
                libignition-cmake2-dev,
                python,
                ruby-ronn,
@@ -30,6 +31,15 @@ Depends: libignition-math6 (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
 Description: Ignition Robotics Math Library - Development files
+
+Package: libignition-math6-eigen3-dev
+Architecture: any
+Section: libdevel
+Depends: libignition-math6-dev (= ${binary:Version}),
+         libeigen3-dev,
+         ${misc:Depends}
+Multi-Arch: same
+Description: Ignition Robotics Math Library - Eigen3 Development files
 
 Package: libignition-math6-dbg
 Architecture: any
