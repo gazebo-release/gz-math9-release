@@ -1,3 +1,9 @@
+ignition-math6 (6.1.0-1~stretch) stretch; urgency=medium
+
+  * ignition-math6 6.1.0-1 release
+
+ -- Steve Peters <scpeters@osrfoundation.org>  Wed, 27 Feb 2019 17:58:22 -0800
+
 ignition-math6 (6.0.0-1~stretch) stretch; urgency=medium
 
   * ignition-math6 6.0.0-1 release
