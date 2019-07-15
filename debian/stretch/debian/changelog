@@ -1,3 +1,9 @@
+ignition-math6 (6.4.0-1~stretch) stretch; urgency=medium
+
+  * ignition-math6 6.4.0-1 release
+
+ -- Nate Koenig <nate@osrfoundation.org>  Mon, 15 Jul 2019 16:29:42 -0700
+
 ignition-math6 (6.3.0-1~stretch) stretch; urgency=medium
 
   * ignition-math6 6.3.0-1 release
