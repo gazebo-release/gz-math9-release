@@ -1,3 +1,9 @@
+ignition-math6 (6.6.0~pre1-1~focal) focal; urgency=medium
+
+  * ignition-math6 6.6.0~pre1-1 release
+
+ -- Louise Poubel <louise@openrobotics.org>  Wed, 16 Sep 2020 12:47:02 -0700
+
 ignition-math6 (6.5.0-2~focal) focal; urgency=medium
 
   * ignition-math6 6.5.0-2 release
