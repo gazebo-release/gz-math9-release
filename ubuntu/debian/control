@@ -8,7 +8,7 @@ Build-Depends: cmake,
                doxygen,
                libeigen3-dev,
                libignition-cmake2-dev,
-               python,
+               python3,
                ruby-ronn,
                swig
 Vcs-Browser: https://bitbucket.org/ignitionrobotics/ign_math-release
