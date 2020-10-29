@@ -15,13 +15,13 @@ override_dh_auto_configure:
 	    -DCMAKE_BUILD_TYPE=RelWithDebInfo
 
 override_dh_strip:
-	dh_strip -a --dbg-package=libignition-math6-dbg
+	dh_strip -a --dbg-package=libignition-math7-dbg
 
 override_dh_install:
 	dh_install
 	# remove duplicate eigen files from mathx-dev.install regexp
-	cd debian/libignition-math6-eigen3-dev; find . -type f -exec rm -f ../libignition-math6-dev/{} \;
-	find debian/libignition-math6-dev -type d -empty -delete
+	cd debian/libignition-math7-eigen3-dev; find . -type f -exec rm -f ../libignition-math7-dev/{} \;
+	find debian/libignition-math7-dev -type d -empty -delete
 
 override_dh_auto_test:
 ifeq ($(DEB_HOST_ARCH),armhf)

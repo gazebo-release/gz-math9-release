@@ -1,4 +1,4 @@
-Source: ignition-math6
+Source: ignition-math7
 Standards-Version: 3.9.4
 Maintainer: Jose Luis Rivero <jrivero@osrfoundation.org>
 Section: science
@@ -11,11 +11,11 @@ Build-Depends: cmake,
                python3,
                ruby-ronn,
                swig
-Vcs-Browser: https://bitbucket.org/ignitionrobotics/ign_math-release
-Vcs-Hg: https://bitbucket.org/ignitionrobotics/ign_math-release
-Homepage: https://bitbucket.org/ignitionrobotics/ign_math
+Vcs-Browser: https://github.com/ignition-release/ign_math-release
+Vcs-Git: https://github.com/ignition-release/ign_math-release
+Homepage: https://github.com/ignition-release/ign_math
 
-Package: libignition-math6
+Package: libignition-math7
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -23,30 +23,30 @@ Depends: ${shlibs:Depends}, ${misc:Depends}
 Multi-Arch: same
 Description: Ignition Robotics Math Library - Shared library
 
-Package: libignition-math6-dev
+Package: libignition-math7-dev
 Architecture: any
 Section: libdevel
-Depends: libignition-math6 (= ${binary:Version}),
+Depends: libignition-math7 (= ${binary:Version}),
          libignition-cmake2-dev,
          ${misc:Depends}
 Multi-Arch: same
 Description: Ignition Robotics Math Library - Development files
 
-Package: libignition-math6-eigen3-dev
+Package: libignition-math7-eigen3-dev
 Architecture: any
 Section: libdevel
-Depends: libignition-math6-dev (= ${binary:Version}),
+Depends: libignition-math7-dev (= ${binary:Version}),
          libeigen3-dev,
          ${misc:Depends}
 Multi-Arch: same
 Description: Ignition Robotics Math Library - Eigen3 Development files
 
-Package: libignition-math6-dbg
+Package: libignition-math7-dbg
 Architecture: any
 Section: debug
 Priority: extra
 Depends:
-     libignition-math6 (= ${binary:Version}),
+     libignition-math7 (= ${binary:Version}),
      ${misc:Depends}
 Multi-Arch: same
 Description: Ignition Robotics Math Library - Debugging symbols
