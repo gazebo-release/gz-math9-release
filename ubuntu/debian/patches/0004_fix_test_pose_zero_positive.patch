@@ -4,17 +4,20 @@ Subject: Check expected string in architectures that fail with negative zero due
 Upstream: No
 
 diff --git a/src/Pose_TEST.cc b/src/Pose_TEST.cc
-index a41c284..3c98771 100644
+index 978c85df..7c0f8040 100644
 --- a/src/Pose_TEST.cc
 +++ b/src/Pose_TEST.cc
-@@ -184,6 +184,9 @@ TEST(PoseTest, OperatorStreamOut)
+@@ -184,8 +184,11 @@ TEST(PoseTest, OperatorStreamOut)
    math::Pose3d p(0.1, 1.2, 2.3, 0.0, 0.1, 1.0);
    std::ostringstream stream;
    stream << p;
 -  EXPECT_EQ(stream.str(), "0.1 1.2 2.3 0 0.1 1");
+-}
 +  // some compiler optimizations returns negative zero (-0) in the stream, workaround
 +  // using prefix and postfix check. Not nice I know.
 +  EXPECT_TRUE(stream.str().find("0.1 1.2 2.3") != std::string::npos) << "stream.str is: " << stream.str();
 +  EXPECT_TRUE(stream.str().find("0 0.1 1") != std::string::npos) << "stream.str is: " << stream.str();
- }
++ }
  
+ /////////////////////////////////////////////////
+ TEST(PoseTest, OperatorStreamOutZero)
