@@ -8,6 +8,7 @@ Build-Depends: cmake,
                doxygen,
                libeigen3-dev,
                libignition-cmake2-dev,
+               libignition-utils1-dev,
                python3,
                ruby-ronn,
                swig
@@ -28,6 +29,7 @@ Architecture: any
 Section: libdevel
 Depends: libignition-math7 (= ${binary:Version}),
          libignition-cmake2-dev,
+         libignition-utils1-dev,
          ${misc:Depends}
 Multi-Arch: same
 Description: Ignition Robotics Math Library - Development files
