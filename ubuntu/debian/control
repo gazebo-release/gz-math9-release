@@ -14,7 +14,6 @@ Build-Depends: cmake,
                python3-distutils,
                python3-pybind11,
                ruby-dev,
-               ruby-ronn,
                swig
 Vcs-Browser: https://github.com/ignitionrobotics/ignition-math
 Vcs-Git: https://github.com/ignition-release/ign_math-release
