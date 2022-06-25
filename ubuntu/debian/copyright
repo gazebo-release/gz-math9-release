@@ -1,7 +1,7 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: ignmath
+Upstream-Name: gz-math
 Upstream-Contact: gazebo-list@gazebosim.org
-Source: https://bitbucket.org/ignitionrobotics/ign_math
+Source: https://github.com/gazebosim/gz-math
 
 Files: *
 Copyright: 2014-2015 Open Source Robotics Foundation

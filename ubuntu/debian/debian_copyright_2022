@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: ignition-math
-Upstream-Contact: https://github.com/ignitionrobotics/ign-math/issues
-Source: https://github.com/ignitionrobotics/ign-math
+Upstream-Name: gz-math
+Upstream-Contact: https://github.com/gazebosim/gz-math/issues
+Source: https://github.com/gazebosim/gz-math
 Files-Excluded: .github
                 appveyor.yml
                 configure.bat

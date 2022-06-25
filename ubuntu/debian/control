@@ -15,10 +15,10 @@ Build-Depends: cmake,
                python3-pybind11,
                ruby-dev,
                swig
-Vcs-Browser: https://github.com/ignitionrobotics/ignition-math
-Vcs-Git: https://github.com/ignition-release/ign_math-release
+Vcs-Browser: https://github.com/gazebosim/gz-math
+Vcs-Git: https://github.com/gazebo-release/gz-math-release
 Standards-Version: 4.5.1
-Homepage: https://github.com/ignition-release/ign_math
+Homepage: https://github.com/gazebo-release/gz-math
 XS-Ruby-Versions: all
 X-Python3-Version: >= 3.2
 
@@ -28,11 +28,11 @@ Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Multi-Arch: same
-Description: Ignition Robotics Math Library - Shared library
+Description: Gazebo Math Library - Shared library
  A small, fast, and high performance math library. This library is a
  self-contained set of classes and functions suitable for robot applications.
  .
- Ignition Robotics is a set of simple libraries that provide useful
+ Gazebo is a set of simple libraries that provide useful
  functionality to bootstrap robot applications. The included libraries
  encapsulate all the essentials, such as common math data types, console
  logging, 3D mesh management, and asynchronous message passing.
@@ -45,11 +45,11 @@ Depends: libignition-math7 (= ${binary:Version}),
          libignition-utils2-dev,
          ${misc:Depends}
 Multi-Arch: same
-Description: Ignition Robotics Math Library - Development files
+Description: Gazebo Math Library - Development files
  A small, fast, and high performance math library. This library is a
  self-contained set of classes and functions suitable for robot applications.
  .
- Ignition Robotics is a set of simple libraries that provide useful
+ Gazebo is a set of simple libraries that provide useful
  functionality to bootstrap robot applications. The included libraries
  encapsulate all the essentials, such as common math data types, console
  logging, 3D mesh management, and asynchronous message passing.
@@ -61,11 +61,11 @@ Depends: libignition-math7-dev (= ${binary:Version}),
          libeigen3-dev,
          ${misc:Depends}
 Multi-Arch: same
-Description: Ignition Robotics Math Library - Eigen3 Development files
+Description: Gazebo Math Library - Eigen3 Development files
  A small, fast, and high performance math library. This library is a
  self-contained set of classes and functions suitable for robot applications.
  .
- Ignition Robotics is a set of simple libraries that provide useful
+ Gazebo is a set of simple libraries that provide useful
  functionality to bootstrap robot applications. The included libraries
  encapsulate all the essentials, such as common math data types, console
  logging, 3D mesh management, and asynchronous message passing.
@@ -80,11 +80,11 @@ Depends: libignition-math7 (= ${binary:Version}),
          ${misc:Depends},
          ${python3:Depends}
 Enhances: libignition-math7
-Description: Ignition Robotics Math Library - Python3 bindings
+Description: Gazebo Math Library - Python3 bindings
  A small, fast, and high performance math library. This library is a
  self-contained set of classes and functions suitable for robot applications.
  .
- Ignition Robotics is a set of simple libraries that provide useful
+ Gazebo is a set of simple libraries that provide useful
  functionality to bootstrap robot applications. The included libraries
  encapsulate all the essentials, such as common math data types, console
  logging, 3D mesh management, and asynchronous message passing.
@@ -99,11 +99,11 @@ Depends: libignition-math7 (= ${binary:Version}),
          ${ruby:Depends},
          ${shlibs:Depends}
 Enhances: libignition-math7
-Description: Ignition Robotics Math Library - Ruby bindings
+Description: Gazebo Math Library - Ruby bindings
  A small, fast, and high performance math library. This library is a
  self-contained set of classes and functions suitable for robot applications.
  .
- Ignition Robotics is a set of simple libraries that provide useful
+ Gazebo is a set of simple libraries that provide useful
  functionality to bootstrap robot applications. The included libraries
  encapsulate all the essentials, such as common math data types, console
  logging, 3D mesh management, and asynchronous message passing.
@@ -118,11 +118,11 @@ Depends:
      libignition-math7 (= ${binary:Version}),
      ${misc:Depends}
 Multi-Arch: same
-Description: Ignition Robotics Math Library - Debugging symbols
+Description: Gazebo Math Library - Debugging symbols
  A small, fast, and high performance math library. This library is a
  self-contained set of classes and functions suitable for robot applications.
  .
- Ignition Robotics is a set of simple libraries that provide useful
+ Gazebo is a set of simple libraries that provide useful
  functionality to bootstrap robot applications. The included libraries
  encapsulate all the essentials, such as common math data types, console
  logging, 3D mesh management, and asynchronous message passing.
