@@ -1,5 +1,5 @@
 #!/bin/sh
-# autopkgtest check: Build and run a program against ign-math, to verify that the
+# autopkgtest check: Build and run a program against gz-math, to verify that the
 # headers and pkg-config file are installed correctly
 # (C) 2012 Jose Luis Rivero
 # Author: Jose Luis Rivero <jrivero@osrfoundation.org>
@@ -9,7 +9,7 @@ set -e
 WORKDIR=$(mktemp -d)
 trap "rm -rf $WORKDIR" 0 INT QUIT ABRT PIPE TERM
 cd $WORKDIR
-cat <<EOF > igntest.c
+cat <<EOF > gztest.c
 
 #include <iostream>
 #include <gz/math.hh>
@@ -76,8 +76,8 @@ int main(int argc, char **argv)
 }
 EOF
 
-g++ -o igntest igntest.c `pkg-config --cflags --libs ignition-math7`
+g++ -o gztest gztest.c `pkg-config --cflags --libs gz-math7`
 echo "build: OK"
-[ -x igntest ]
-./igntest
+[ -x gztest ]
+./gztest
 echo "run: OK"
