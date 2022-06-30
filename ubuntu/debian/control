@@ -1,4 +1,4 @@
-Source: ignition-math7
+Source: gz-math7
 Maintainer: Jose Luis Rivero <jrivero@osrfoundation.org>
 Section: science
 Priority: extra
@@ -7,8 +7,8 @@ Build-Depends: cmake,
                dh-python,
                doxygen,
                libeigen3-dev,
-               libignition-cmake3-dev,
-               libignition-utils2-dev,
+               libgz-cmake3-dev,
+               libgz-utils2-dev,
                python3,
                python3-dev,
                python3-distutils,
@@ -22,11 +22,13 @@ Homepage: https://github.com/gazebo-release/gz-math
 XS-Ruby-Versions: all
 X-Python3-Version: >= 3.2
 
-Package: libignition-math7
+Package: libgz-math7
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Breaks: libignition-math7 (<< 6.999.999+nightly+git20220630+1rd15c9b2c302f41dcb4acc039a830c8b1092627b2-1)
+Replaces: libignition-math7 (<< 6.999.999+nightly+git20220630+1rd15c9b2c302f41dcb4acc039a830c8b1092627b2-1)
 Multi-Arch: same
 Description: Gazebo Math Library - Shared library
  A small, fast, and high performance math library. This library is a
@@ -37,13 +39,15 @@ Description: Gazebo Math Library - Shared library
  encapsulate all the essentials, such as common math data types, console
  logging, 3D mesh management, and asynchronous message passing.
 
-Package: libignition-math7-dev
+Package: libgz-math7-dev
 Architecture: any
 Section: libdevel
-Depends: libignition-math7 (= ${binary:Version}),
-         libignition-cmake3-dev,
-         libignition-utils2-dev,
+Depends: libgz-math7 (= ${binary:Version}),
+         libgz-cmake3-dev,
+         libgz-utils2-dev,
          ${misc:Depends}
+Breaks: libignition-math7-dev (<< 6.999.999+nightly+git20220630+1rd15c9b2c302f41dcb4acc039a830c8b1092627b2-1)
+Replaces: libignition-math7-dev (<< 6.999.999+nightly+git20220630+1rd15c9b2c302f41dcb4acc039a830c8b1092627b2-1)
 Multi-Arch: same
 Description: Gazebo Math Library - Development files
  A small, fast, and high performance math library. This library is a
@@ -54,12 +58,14 @@ Description: Gazebo Math Library - Development files
  encapsulate all the essentials, such as common math data types, console
  logging, 3D mesh management, and asynchronous message passing.
 
-Package: libignition-math7-eigen3-dev
+Package: libgz-math7-eigen3-dev
 Architecture: any
 Section: libdevel
-Depends: libignition-math7-dev (= ${binary:Version}),
+Depends: libgz-math7-dev (= ${binary:Version}),
          libeigen3-dev,
          ${misc:Depends}
+Breaks: libignition-math7-eigen-dev (<< 6.999.999+nightly+git20220630+1rd15c9b2c302f41dcb4acc039a830c8b1092627b2-1)
+Replaces: libignition-math7-eigen-dev (<< 6.999.999+nightly+git20220630+1rd15c9b2c302f41dcb4acc039a830c8b1092627b2-1)
 Multi-Arch: same
 Description: Gazebo Math Library - Eigen3 Development files
  A small, fast, and high performance math library. This library is a
@@ -72,14 +78,16 @@ Description: Gazebo Math Library - Eigen3 Development files
  .
  The package contains the development files relative to Eigen
 
-Package: python3-ignition-math7
+Package: python3-gz-math7
 Architecture: any
-Depends: libignition-math7 (= ${binary:Version}),
+Depends: libgz-math7 (= ${binary:Version}),
          python3-distutils,
          python3-pybind11,
          ${misc:Depends},
          ${python3:Depends}
-Enhances: libignition-math7
+Breaks: python3-ignition-math7 (<< 6.999.999+nightly+git20220630+1rd15c9b2c302f41dcb4acc039a830c8b1092627b2-1)
+Replaces: python3-ignition-math7 (<< 6.999.999+nightly+git20220630+1rd15c9b2c302f41dcb4acc039a830c8b1092627b2-1)
+Enhances: libgz-math7
 Description: Gazebo Math Library - Python3 bindings
  A small, fast, and high performance math library. This library is a
  self-contained set of classes and functions suitable for robot applications.
@@ -91,14 +99,16 @@ Description: Gazebo Math Library - Python3 bindings
  .
  The package contains the Python3 bindings.
 
-Package: ruby-ignition-math7
+Package: ruby-gz-math7
 Architecture: any
 XB-Ruby-Versions: ${ruby:Versions}
-Depends: libignition-math7 (= ${binary:Version}),
+Depends: libgz-math7 (= ${binary:Version}),
          ${misc:Depends},
          ${ruby:Depends},
          ${shlibs:Depends}
-Enhances: libignition-math7
+Breaks: ruby-ignition-math7 (<< 6.999.999+nightly+git20220630+1rd15c9b2c302f41dcb4acc039a830c8b1092627b2-1)
+Replaces: ruby-ignition-math7 (<< 6.999.999+nightly+git20220630+1rd15c9b2c302f41dcb4acc039a830c8b1092627b2-1)
+Enhances: libgz-math7
 Description: Gazebo Math Library - Ruby bindings
  A small, fast, and high performance math library. This library is a
  self-contained set of classes and functions suitable for robot applications.
@@ -110,13 +120,15 @@ Description: Gazebo Math Library - Ruby bindings
  .
  The package contains the Ruby bindings.
 
-Package: libignition-math7-dbg
+Package: libgz-math7-dbg
 Architecture: any
 Section: debug
 Priority: extra
 Depends:
-     libignition-math7 (= ${binary:Version}),
+     libgz-math7 (= ${binary:Version}),
      ${misc:Depends}
+Breaks: libignition-math7-dbg (<< 6.999.999+nightly+git20220630+1rd15c9b2c302f41dcb4acc039a830c8b1092627b2-1)
+Replaces: libignition-math7-dbg (<< 6.999.999+nightly+git20220630+1rd15c9b2c302f41dcb4acc039a830c8b1092627b2-1)
 Multi-Arch: same
 Description: Gazebo Math Library - Debugging symbols
  A small, fast, and high performance math library. This library is a
@@ -126,3 +138,51 @@ Description: Gazebo Math Library - Debugging symbols
  functionality to bootstrap robot applications. The included libraries
  encapsulate all the essentials, such as common math data types, console
  logging, 3D mesh management, and asynchronous message passing.
+
+Package: libignition-math7
+Depends: libgz-math7, ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: oldlibs
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: libignition-math7-dev
+Depends: libgz-math7-dev, ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: oldlibs
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: libignition-math7-eigen3-dev
+Depends: libgz-math7-eigen3-dev, ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: oldlibs
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: python3-ignition-math7
+Depends: python3-gz-math7, ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: oldlibs
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: ruby-ignition-math7
+Depends: ruby-gz-math7, ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: oldlibs
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: libignition-math7-dbg
+Depends: libgz-math7-dbg, ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: oldlibs
+Description: transitional package
+ This is a transitional package. It can safely be removed.
