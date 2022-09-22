@@ -1,3 +1,9 @@
+gz-math7 (7.0.0-1~focal) focal; urgency=medium
+
+  * gz-math7 7.0.0-1 release
+
+ -- Nate Koenig <nate@osrfoundation.org>  Thu, 22 Sep 2022 14:10:21 -0700
+
 gz-math7 (7.0.0~pre2-1~focal) focal; urgency=medium
 
   * gz-math7 7.0.0~pre2-1 release
