@@ -1,7 +1,5 @@
 #!/usr/bin/make -f
 
-export PYBUILD_NAME=ignition-math7
-
 DEB_HOST_ARCH := $(shell dpkg-architecture -qDEB_HOST_ARCH)
 
 .PHONY: override_dh_auto_configure \
@@ -20,13 +18,13 @@ override_dh_auto_configure:
 	    -DUSE_SYSTEM_PATHS_FOR_RUBY_INSTALLATION=ON
 
 override_dh_strip:
-	dh_strip -a --dbg-package=libgz-math7-dbg
+	dh_strip -a --dbg-package=libgz-math8-dbg
 
 override_dh_install:
 	dh_install
 	# remove duplicate eigen files from mathx-dev.install regexp
-	cd debian/libgz-math7-eigen3-dev; find . -type f -exec rm -f ../libgz-math7-dev/{} \;
-	find debian/libgz-math7-dev -type d -empty -delete
+	cd debian/libgz-math8-eigen3-dev; find . -type f -exec rm -f ../libgz-math8-dev/{} \;
+	find debian/libgz-math8-dev -type d -empty -delete
 
 override_dh_auto_test:
 ifeq ($(DEB_HOST_ARCH),armhf)

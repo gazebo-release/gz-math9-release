@@ -76,7 +76,7 @@ int main(int argc, char **argv)
 }
 EOF
 
-g++ -o gztest gztest.c `pkg-config --cflags --libs gz-math7`
+g++ -o gztest gztest.c `pkg-config --cflags --libs gz-math8`
 echo "build: OK"
 [ -x gztest ]
 ./gztest
