@@ -3,4 +3,3 @@ usr/lib/*/*.so
 usr/lib/*/pkgconfig/*.pc
 usr/lib/*/cmake/*-math[0-99]/*
 usr/lib/*/cmake/*-math[0-99]-all/*
-usr/share/gz/*/*
