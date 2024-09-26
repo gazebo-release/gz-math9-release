@@ -1,12 +1,11 @@
+gz-math8 (8.0.0-1~jammy) jammy; urgency=medium
+
+  * gz-math8 8.0.0-1 release
+
+ -- Addisu Z. Taddese <addisu@openrobotics.org>  Thu, 26 Sep 2024 09:49:42 -0500
+
 gz-math8 (8.0.0~pre1-1~jammy) jammy; urgency=medium
 
   * gz-math8 8.0.0~pre1-1 release
 
  -- Ian Chen <ichen@openrobotics.org>  Sat, 24 Aug 2024 00:59:36 +0000
-
-gz-math8 (7.999.999-1~jammy) jammy; urgency=medium
-
-  * Stub to be removed after first entry
-
- -- Addisu Z. Taddese <addisu@openrobotics.org>  Mon, 09 Oct 2023 16:43:37 -0500
-
