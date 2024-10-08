@@ -1,4 +1,4 @@
-Source: gz-math8
+Source: gz-math9
 Maintainer: Jose Luis Rivero <jrivero@osrfoundation.org>
 Section: science
 Priority: extra
@@ -21,7 +21,7 @@ Homepage: https://github.com/gazebo-release/gz-math
 XS-Ruby-Versions: all
 X-Python3-Version: >= 3.2
 
-Package: libgz-math8
+Package: libgz-math9
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -36,10 +36,10 @@ Description: Gazebo Math Library - Shared library
  encapsulate all the essentials, such as common math data types, console
  logging, 3D mesh management, and asynchronous message passing.
 
-Package: libgz-math8-dev
+Package: libgz-math9-dev
 Architecture: any
 Section: libdevel
-Depends: libgz-math8 (= ${binary:Version}),
+Depends: libgz-math9 (= ${binary:Version}),
          libgz-cmake4-dev,
          libgz-utils3-dev,
          ${misc:Depends}
@@ -53,10 +53,10 @@ Description: Gazebo Math Library - Development files
  encapsulate all the essentials, such as common math data types, console
  logging, 3D mesh management, and asynchronous message passing.
 
-Package: libgz-math8-eigen3-dev
+Package: libgz-math9-eigen3-dev
 Architecture: any
 Section: libdevel
-Depends: libgz-math8-dev (= ${binary:Version}),
+Depends: libgz-math9-dev (= ${binary:Version}),
          libeigen3-dev,
          ${misc:Depends}
 Multi-Arch: same
@@ -71,13 +71,13 @@ Description: Gazebo Math Library - Eigen3 Development files
  .
  The package contains the development files relative to Eigen
 
-Package: python3-gz-math8
+Package: python3-gz-math9
 Architecture: any
-Depends: libgz-math8 (= ${binary:Version}),
+Depends: libgz-math9 (= ${binary:Version}),
          python3-pybind11,
          ${misc:Depends},
          ${python3:Depends}
-Enhances: libgz-math8
+Enhances: libgz-math9
 Description: Gazebo Math Library - Python3 bindings
  A small, fast, and high performance math library. This library is a
  self-contained set of classes and functions suitable for robot applications.
@@ -89,14 +89,14 @@ Description: Gazebo Math Library - Python3 bindings
  .
  The package contains the Python3 bindings.
 
-Package: ruby-gz-math8
+Package: ruby-gz-math9
 Architecture: any
 XB-Ruby-Versions: ${ruby:Versions}
-Depends: libgz-math8 (= ${binary:Version}),
+Depends: libgz-math9 (= ${binary:Version}),
          ${misc:Depends},
          ${ruby:Depends},
          ${shlibs:Depends}
-Enhances: libgz-math8
+Enhances: libgz-math9
 Description: Gazebo Math Library - Ruby bindings
  A small, fast, and high performance math library. This library is a
  self-contained set of classes and functions suitable for robot applications.
@@ -108,12 +108,12 @@ Description: Gazebo Math Library - Ruby bindings
  .
  The package contains the Ruby bindings.
 
-Package: libgz-math8-dbg
+Package: libgz-math9-dbg
 Architecture: any
 Section: debug
 Priority: extra
 Depends:
-     libgz-math8 (= ${binary:Version}),
+     libgz-math9 (= ${binary:Version}),
      ${misc:Depends}
 Multi-Arch: same
 Description: Gazebo Math Library - Debugging symbols
