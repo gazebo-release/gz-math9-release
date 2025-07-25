@@ -124,3 +124,35 @@ Description: Gazebo Math Library - Debugging symbols
  functionality to bootstrap robot applications. The included libraries
  encapsulate all the essentials, such as common math data types, console
  logging, 3D mesh management, and asynchronous message passing.
+
+Package: gz-jetty-math
+Depends: libgz-math9-dev (= ${binary:Version}), ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: metapackages
+Description: alias package
+ Provides a package for Jetty without exposing the version number.
+
+Package: gz-jetty-math-eigen3
+Depends: libgz-math9-eigen3-dev (= ${binary:Version}), ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: metapackages
+Description: alias package
+ Provides a package for Jetty without exposing the version number.
+
+Package: gz-jetty-math-python
+Depends: python3-gz-math9 (= ${binary:Version}), ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: metapackages
+Description: alias package
+ Provides a package for Jetty without exposing the version number.
+
+Package: gz-jetty-math-ruby
+Depends: ruby-gz-math9 (= ${binary:Version}), ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: metapackages
+Description: alias package
+ Provides a package for Jetty without exposing the version number.
