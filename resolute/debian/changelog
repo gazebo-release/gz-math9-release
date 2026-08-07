@@ -1,0 +1,42 @@
+gz-math9 (9.2.0-2~resolute) noble; urgency=medium
+
+  * gz-math9 9.2.0-2 release
+
+ -- Steve Peters <scpeters@intrinsic.ai>  Wed, 05 Aug 2026 23:53:14 +0000
+
+gz-math9 (9.2.0-1~resolute) noble; urgency=medium
+
+  * gz-math9 9.2.0-1 release
+
+ -- Steve Peters <scpeters@intrinsic.ai>  Wed, 08 Jul 2026 01:09:10 +0000
+
+gz-math9 (9.1.0-1~resolute) noble; urgency=medium
+
+  * gz-math9 9.1.0-1 release
+
+ -- Steve Peters <scpeters@openrobotics.org>  Fri, 27 Mar 2026 16:43:29 +0000
+
+gz-math9 (9.0.0-1~resolute) noble; urgency=medium
+
+  * gz-math9 9.0.0-1 release
+
+ -- Addisu Z. Taddese <addisu@openrobotics.org>  Fri, 26 Sep 2025 11:42:33 -0500
+
+gz-math9 (9.0.0~pre2-1~resolute) noble; urgency=medium
+
+  * gz-math9 9.0.0~pre2-1 release
+
+ -- Steve Peters <scpeters@openrobotics.org>  Mon, 22 Sep 2025 17:54:08 +0000
+
+gz-math9 (9.0.0~pre1-1~resolute) noble; urgency=medium
+
+  * gz-math9 9.0.0~pre1-1 release
+
+ -- Steve Peters <scpeters@openrobotics.org>  Fri, 22 Aug 2025 22:08:11 +0000
+
+gz-math9 (8.999.999-1~resolute) noble; urgency=medium
+
+  * Stub to be removed after first entry
+
+ -- Carlos Aguero <caguero@openrobotics.org>  Tue, 08 Oct 2024 20:54:48 +0200
+
