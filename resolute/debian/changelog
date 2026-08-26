@@ -1,3 +1,9 @@
+gz-math9 (9.3.0-1~resolute) resolute; urgency=medium
+
+  * gz-math9 9.3.0-1 release
+
+ -- Carlos Agüero <caguero@honurobotics.com>  Wed, 26 Aug 2026 11:17:06 +0200
+
 gz-math9 (9.2.0-2~resolute) resolute; urgency=medium
 
   * gz-math9 9.2.0-2 release
